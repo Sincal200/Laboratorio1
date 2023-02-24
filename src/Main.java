@@ -55,6 +55,17 @@ public class Main {
                 case 3:
                     linkedList.traverse();
                     break;
+                case 4:
+                    System.out.println("Ingrese valor a buscar");
+                    valor = sc.next();
+                    linkedList.searchByIndex(Integer.parseInt(valor));
+                    break;
+                case 5:
+                    System.out.println("Ingrese posición del valor a borrar");
+                    valor = sc.next();
+                    linkedList.deleteFromPosition(Integer.parseInt(valor));
+                    linkedList.traverse();
+                    break;
             }
         } while (option != 6);
 
