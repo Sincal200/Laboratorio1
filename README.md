@@ -5,4 +5,10 @@ Evidencia de Ejecución: https://drive.google.com/drive/folders/1qMbxINnyyUlwpN8
 
 -----
 
+Diagrama de Clases
+
+-----
+
+
+
 
