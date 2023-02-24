@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
@@ -28,28 +29,31 @@ public class Main {
                     String valor = sc.next();
                     // display the linked list before inserting an item at the first position
                     System.out.print("LinkedList before inserting an item at the first position: ");
-                    linkedList.display();
+                    linkedList.traverse();
 
                     // insert an item at the first position
                     linkedList.insertAtFirst(valor);
 
                     // display the linked list after inserting an item at the first position
                     System.out.print("LinkedList after inserting an item at the first position: ");
-                    linkedList.display();
+                    linkedList.traverse();
                     break;
                 case 2:
                     System.out.println("Ingrese valor");
                     valor = sc.next();
                     // display the linked list before inserting an item at the first position
                     System.out.print("LinkedList before inserting an item at the first position: ");
-                    linkedList.display();
+                    linkedList.traverse();
 
                     // insert an item at the first position
                     linkedList.insertAtTail(valor);
 
                     // display the linked list after inserting an item at the first position
                     System.out.print("LinkedList after inserting an item at the first position: ");
-                    linkedList.display();
+                    linkedList.traverse();
+                    break;
+                case 3:
+                    linkedList.traverse();
                     break;
             }
         } while (option != 6);

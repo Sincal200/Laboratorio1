@@ -2,9 +2,6 @@ public class Linky {
     Node head;
     private int size = 0;
 
-    public Linky() {
-        head = null;
-    }
 
     public void insertAtFirst(String item) {
         Node newNode = new Node(item);
@@ -12,17 +9,7 @@ public class Linky {
         head = newNode;
         size++;
     }
-
-    public void display() {
-            Node temp = head;
-        System.out.println("");
-            while (temp != null) {
-                System.out.println(temp.data);
-
-                temp = temp.next;
-            }
-    }
-
+    
     public void insertAtTail(String value) {
         Node newNode = new Node(value);
         newNode.next = null;
@@ -38,5 +25,14 @@ public class Linky {
             tempNode.next = newNode;
         }
         size++;
+    }
+
+    public void traverse() {
+        Node temp = head;
+        System.out.println("");
+        while (temp != null) {
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
     }
 }
