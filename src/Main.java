@@ -42,26 +42,26 @@ public class Main {
                     System.out.println("Ingrese valor");
                     valor = sc.next();
                     // display the linked list before inserting an item at the first position
-                    System.out.print("LinkedList before inserting an item at the first position: ");
+                    System.out.print("LinkedList before inserting an item at the end: ");
                     linkedList.traverse();
 
                     // insert an item at the first position
                     linkedList.insertAtTail(valor);
 
                     // display the linked list after inserting an item at the first position
-                    System.out.print("LinkedList after inserting an item at the first position: ");
+                    System.out.print("LinkedList after inserting an item at the end: ");
                     linkedList.traverse();
                     break;
                 case 3:
                     linkedList.traverse();
                     break;
                 case 4:
-                    System.out.println("Ingrese valor a buscar");
+                    System.out.println("Ingrese posicion de valor a buscar");
                     valor = sc.next();
                     linkedList.searchByIndex(Integer.parseInt(valor));
                     break;
                 case 5:
-                    System.out.println("Ingrese posición del valor a borrar");
+                    System.out.println("Ingrese posicion del valor a borrar");
                     valor = sc.next();
                     linkedList.deleteFromPosition(Integer.parseInt(valor));
                     linkedList.traverse();
